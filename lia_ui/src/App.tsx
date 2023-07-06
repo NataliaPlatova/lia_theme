@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import MyFirstComponent from './components/MyFirstComponent';
 
 function App() {
   return (
     <div className="App">
-      hi
+      <MyFirstComponent text="Hi!"/>
     </div>
   );
 }
