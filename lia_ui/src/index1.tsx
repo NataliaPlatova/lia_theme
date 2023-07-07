@@ -3,14 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Feedback from './components/Feeadback';
 
-const newButton = ReactDOM.createRoot(
-  document.getElementById('feedback') as HTMLElement
+const root = ReactDOM.createRoot(
+  document.getElementById('app') as HTMLElement
 );
-newButton.render(
+root.render(
   <React.StrictMode>
-   <Feedback/>
+    <App />
   </React.StrictMode>
 );
 
