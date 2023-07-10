@@ -1,0 +1,23 @@
+.lia__sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 290px;
+    max-width: 290px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 24px;
+    position: fixed;
+    box-sizing: border-box;
+    max-height: 100vh;
+    height: 100%;
+    overflow-y: scroll;
+}
+.lia__sidebar__content {
+    
+}
+.lia__sidebar__placeholder {
+    width: 290px;
+    max-width: 290px;
+    padding: 24px;
+}
