@@ -1,0 +1,22 @@
+.lia__navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.lia__navigation__button {
+    color: #3A3A3A;
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid #DDDCE3;
+}
+
+.lia__navigation__button a {
+    color: #3A3A3A;
+}
+
+.lia__dark .lia__navigation__button, .lia__dark .lia__navigation__button a {
+    color: white;
+}

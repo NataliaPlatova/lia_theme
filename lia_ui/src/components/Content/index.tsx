@@ -1,10 +1,10 @@
 import Admonition from "../Admonition";
 
-import s from "./Content.module.css";
+import "./content.css";
 
 const Content = () => {
     return (
-        <div className={s.lia__content}>
+        <div className="lia__content">
             <h1>Header h1</h1>
             <h2>Header h2</h2>
             <p>

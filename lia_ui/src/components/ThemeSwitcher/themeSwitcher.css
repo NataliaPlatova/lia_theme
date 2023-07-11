@@ -1,0 +1,12 @@
+.lia__theme-switcher {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    border: 1px solid #DDDCE3;
+    height: 24px;
+    cursor: pointer;
+}
+
+.lia__dark .lia__theme-switcher {
+    color: white;
+    font-weight: 600;
+}

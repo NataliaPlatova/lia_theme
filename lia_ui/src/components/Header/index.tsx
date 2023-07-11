@@ -1,13 +1,16 @@
-import s from "./Header.module.css";
+import "./header.css";
+import React from "react";
 
-const Header = () => {
-    return <div className={s.lia__header}>
-        <span><a href="/">Home Link</a></span>
-        <div className={s.lia__header__linkGroup}>
-            <span><a href="/">link1</a></span>
-            <span><a href="/">link2</a></span>
+interface IHeaderProps {
+    children: React.ReactNode | JSX.Element
+}
+
+const Header = (props: IHeaderProps) => {
+    return (
+        <div className="lia__header">
+            {props.children}
         </div>
-    </div>
+    );
 };
 
 export default Header;

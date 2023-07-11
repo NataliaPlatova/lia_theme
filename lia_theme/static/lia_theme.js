@@ -1,1 +1,1 @@
-../../lia_ui/build/static/js/app.js
+../../lia_ui/build/static/js/main.js

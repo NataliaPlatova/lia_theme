@@ -1,9 +1,9 @@
-import s from "./Admonition.module.css";
+import "./admonition.css";
 
 const Admonition = () => {
     return (
-        <div className={`${s.lia__admonition_danger} ${s.lia__admonition}`}>
-            <h4>Admonition danger</h4>
+        <div className={`admonition important`}>
+            <p>Admonition danger</p>
             <p>Important text</p>
         </div>
     );

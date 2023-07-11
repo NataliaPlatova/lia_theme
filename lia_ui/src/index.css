@@ -13,8 +13,39 @@ code {
     monospace;
 }
 
+section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 h1, h2, h3, h4, p, span, li {
   color:#3A3A3A;
+}
+
+a {
+  text-decoration: none;
+  color: #3A3A3A;
+  cursor: pointer;
+}
+ul {
+  list-style-type: none;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  list-style-position: inside;
+}
+
+ol li>p:first-child {
+  display: inline;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  padding: 8px 16px;
 }
 
 h1, h2, h3, h4 {
@@ -36,4 +67,27 @@ h3 {
 h4, p, span, li {
   font-size: 16px;
   text-align: left;
+}
+
+.lia__dark h1, .lia__dark h2, .lia__dark h3, .lia__dark h4, .lia__dark span, .lia__dark p, .lia__dark li, .lia__dark a {
+  color: white;
+}
+
+pre {
+  margin: 0;
+  color: white;
+}
+
+pre span {
+  color: white;
+}
+
+.highlight {
+  background-color: #3A3A3A;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.lia__dark .highlight {
+  background-color: rgba(255, 255, 255, 0.3);
 }

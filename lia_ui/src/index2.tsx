@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Feedback from './components/Feeadback';
+import ThemeSwitcher from './components/ThemeSwitcher';
 
 const newButton = ReactDOM.createRoot(
   document.getElementById('feedback') as HTMLElement
@@ -11,6 +12,15 @@ const newButton = ReactDOM.createRoot(
 newButton.render(
   <React.StrictMode>
    <Feedback/>
+  </React.StrictMode>
+);
+
+const switchThemeButton = ReactDOM.createRoot(
+  document.getElementById('switchTheme') as HTMLElement
+);
+switchThemeButton.render(
+  <React.StrictMode>
+   <ThemeSwitcher/>
   </React.StrictMode>
 );
 

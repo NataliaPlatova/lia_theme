@@ -1,0 +1,17 @@
+.lia__header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 16px;
+    background-color: white;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.lia__header__linkGroup {
+    display: flex;
+}
+
+.lia__dark .lia__header {
+    background-color: rgba(255, 255, 255, 0.3);
+}
