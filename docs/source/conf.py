@@ -16,9 +16,9 @@ author = 'nataliaplatova47@gmail.com'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-sys.path.append(os.path.abspath("./_ext"))
+# sys.path.append(os.path.abspath("./_ext"))
 
-extensions = ['helloWorld']
+#extensions = ['helloWorld']
 
 templates_path = ['_templates']
 exclude_patterns = []

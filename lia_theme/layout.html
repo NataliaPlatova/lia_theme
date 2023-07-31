@@ -16,51 +16,9 @@
         <div id="app" class="lia__layout">
             {%- block sidebar %} {%- include "./sidebar.html" %} {%- endblock %}
             <div class="lia__layout_page">
-                {%- block header %}
-                <div class="lia__header" id="header">
-                    <div>
-                        <router-link to="{{pathto(master_doc)}}">
-                            {% if logo %}
-                            <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" alt="logo" />
-                            {% else %}
-                            <span class="site-name">{{ project|e }}</span>
-                            {% endif %}
-                        </router-link>
-                    </div>
-                    <div id="switchTheme"></div>
-                </div>
-                {%- endblock %}
-                <div class="lia__content">
-                    {% block body %} {% if admonition %}
-                    <div class="lia__admonition">{%- block admonition %}{% endblock %}</div>
-                    {% endif %} {% endblock %}
-                    <h1>header</h1>
-                    <h2>small header</h2>
-                    <p>
-                        The index.rst file that sphinx-quickstart created has some content already,
-                        and it gets rendered as the front page of your HTML documentation. It is
-                        written in reStructuredText, a powerful markup language.The index.rst file
-                        that sphinx-quickstart created has some content already, and it gets
-                        rendered as the front page of your HTML documentation. It is written in
-                        reStructuredText, a powerful
-                    </p>
-                    <a>link</a>
-                </div>
-                <div class="lia__navigation">
-                    {%- if prev %}
-                    <div class="lia__navigation__button">
-                        <a href="{{ prev.link|e }}" title="{{ _('previous chapter') }}"
-                            >← {{ prev.title }}</a
-                        >
-                    </div>
-                    {%- endif %} {%- if next %}
-                    <div class="lia__navigation__button">
-                        <a href="{{ next.link|e }}" title="{{ _('next chapter') }}"
-                            >{{ next.title }} →</a
-                        >
-                    </div>
-                    {%- endif %}
-                </div>
+                {%- block header %} {%- include "./header.html" %} {%- endblock %}
+                <div class="lia__content">{% block body %} {% endblock %}</div>
+                {%- block navigation %} {%- include "./navigation.html" %} {%- endblock %}
             </div>
         </div>
         <script src="{{ pathto('_static/lia_theme.js', 1)}}"></script>

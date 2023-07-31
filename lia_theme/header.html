@@ -1,0 +1,12 @@
+<div class="lia__header" id="header">
+    <div>
+        <router-link to="{{pathto(master_doc)}}">
+            {% if logo %}
+            <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" alt="logo" />
+            {% else %}
+            <span class="site-name">{{ project|e }}</span>
+            {% endif %}
+        </router-link>
+    </div>
+    {%- block switchTheme %} {%- include "./switchTheme.html" %} {%- endblock %}
+</div>
